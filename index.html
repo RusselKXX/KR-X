@@ -3,113 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cafetería Aroma</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Tienda Tech</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff8f0;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
     }
+
     header {
-      background-color: #ff6f61;
-      color: white;
-      padding: 1.5rem;
+      background-color: #1f1f1f;
+      padding: 20px;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      color: #00bcd4;
     }
+
     nav {
-      background-color: #ff9472;
-      display: flex;
-      justify-content: center;
-      padding: 1rem 0;
+      text-align: center;
+      margin-top: 10px;
     }
+
     nav a {
-      color: white;
+      color: #f0f0f0;
       text-decoration: none;
-      margin: 0 1.5rem;
-      font-weight: bold;
-      transition: color 0.3s ease;
+      margin: 0 15px;
     }
-    nav a:hover {
-      color: #fffde7;
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px;
     }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-    }
-    .hero h2 {
-      font-size: 3rem;
-      background-color: rgba(255, 111, 97, 0.7);
-      padding: 1rem 2rem;
-      border-radius: 12px;
-    }
-    .content {
-      padding: 3rem 2rem;
+
+    .producto {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 15px;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     }
-    .content h3 {
-      font-size: 2rem;
-      color: #ff6f61;
-      margin-bottom: 1rem;
+
+    .producto img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: contain;
+      border-radius: 5px;
     }
-    .content p {
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
+
+    .producto h3 {
+      margin: 10px 0 5px;
+      color: #00e676;
     }
+
+    .producto p {
+      margin: 0;
+    }
+
     footer {
-      background-color: #ff6f61;
-      color: white;
+      background-color: #1f1f1f;
       text-align: center;
-      padding: 1.5rem 0;
-      margin-top: 2rem;
+      padding: 15px;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Cafetería Aroma</h1>
+    <h1>Tienda Tech</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Contacto</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#menu">Menú</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <section class="hero" id="inicio">
-    <h2>¡Siente el aroma, vive el sabor!</h2>
-  </section>
-
-  <section class="content" id="nosotros">
-    <h3>Sobre Nosotros</h3>
-    <p>En Cafetería Aroma, mezclamos pasión y sabor en cada taza. Ven a disfrutar de un ambiente acogedor y de nuestras especialidades artesanales hechas con los mejores granos de café.</p>
-  </section>
-
-  <section class="content" id="menu">
-    <h3>Nuestro Menú</h3>
-    <p>Desde espresso hasta capuchinos, pasando por deliciosos postres, tenemos algo para cada amante del café. ¡Descúbrelo!</p>
-  </section>
-
-  <section class="content" id="contacto">
-    <h3>Contáctanos</h3>
-    <p>📍 Calle del Aroma 123, Ciudad Café | ☎️ +51 123 456 789 | ✉️ contacto@cafearoma.com</p>
+  <section class="productos">
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Audífonos" alt="Audífonos">
+      <h3>Audífonos Inalámbricos</h3>
+      <p>S/ 79.90</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Funda" alt="Funda de Celular">
+      <h3>Funda Antigolpes</h3>
+      <p>S/ 25.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Cargador" alt="Cargador Rápido">
+      <h3>Cargador Rápido USB-C</h3>
+      <p>S/ 39.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Teclado" alt="Teclado Gamer">
+      <h3>Teclado Gamer RGB</h3>
+      <p>S/ 149.00</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Cafetería Aroma. Todos los derechos reservados.</p>
+    © 2025 Tienda Tech. Todos los derechos reservados.
   </footer>
+
 </body>
 </html>
